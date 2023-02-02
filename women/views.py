@@ -77,6 +77,8 @@ class WorkHome(ListView):
         return context
 
 
+
+
 def show_work_one(request, work_id):
     work_one = get_object_or_404(Work, id=work_id)
     images = Images.objects.all()
